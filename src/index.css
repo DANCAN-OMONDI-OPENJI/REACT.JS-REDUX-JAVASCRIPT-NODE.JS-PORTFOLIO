@@ -55,6 +55,10 @@ code {
   margin: 0 10px;
 }
 
+.header button:hover {
+  cursor: pointer;
+}
+
 .home {
   padding: 2rem;
   display: flex;
@@ -77,6 +81,7 @@ code {
 }
 .home-img-div img {
   opacity: 0.9;
+  width: 50vw;
 }
 .home p {
   margin-top: -8rem;
@@ -84,4 +89,35 @@ code {
   z-index: 2;
   color: rgba(100, 120, 180);
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 780px) {
+  .header {
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    color: whitesmoke;
+  }
+  .header button {
+    font-size: 2px;
+  }
+  .home h3 {
+    width: 65vw;
+  }
+  .home-img-div {
+    margin-top: -6rem;
+  }
+  .home-img-div img {
+    opacity: 0.9;
+    width: 75vw;
+  }
+  .home p {
+    margin-top: -6rem;
+  }
 }
