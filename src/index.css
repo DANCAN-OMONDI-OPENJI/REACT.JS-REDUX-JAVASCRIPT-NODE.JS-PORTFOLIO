@@ -11,14 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+/* App.js*/
 .app {
   /*background-color: rgba(100, 120, 180);*/
   background-color: black;
   padding-bottom: 6rem;
   margin-bottom: 0;
   overflow: hidden;
+  color: whitesmoke;
 }
+
+/*Header page*/
 
 .header {
   /*position: fixed;
@@ -31,6 +34,7 @@ code {
   z-index: 2;
   color: whitesmoke;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .header-links {
@@ -38,6 +42,7 @@ code {
   list-style: none;
   justify-content: space-between;
   color: whitesmoke;
+  font-weight: bold;
 }
 .header-links a {
   text-decoration: none;
@@ -49,15 +54,20 @@ code {
 }
 .header-links a:visited {
   color: whitesmoke;
+  font-weight: bold;
 }
 
 .header-links li {
   margin: 0 10px;
 }
-
+.header button {
+  font-weight: 600;
+}
 .header button:hover {
   cursor: pointer;
 }
+
+/* home page*/
 
 .home {
   padding: 2rem;
@@ -89,6 +99,37 @@ code {
   z-index: 2;
   color: rgba(100, 120, 180);
   font-size: 1.2rem;
+}
+
+/* About page*/
+
+.about {
+  font-size: 1.2rem;
+  /*color: whitesmoke;*/
+  color: inherit;
+  padding: 2rem;
+}
+.about h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.about p {
+  font-weight: 500;
+}
+.img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about img {
+  width: 50vw;
+  height: 50vh;
+  object-fit: contain;
+  opacity: 0.8;
+}
+.about p:last-of-type {
+  text-align: center;
 }
 
 @media screen and (max-width: 780px) {
