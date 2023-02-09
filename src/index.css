@@ -12,21 +12,76 @@ code {
     monospace;
 }
 
+.app {
+  /*background-color: rgba(100, 120, 180);*/
+  background-color: black;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
 .header {
+  /*position: fixed;
+  width: 95vw;*/
   display: flex;
   justify-content: space-between;
+  padding: 2rem;
+  /*border-bottom: 4px solid rgb(255, 0, 128, 0.5);*/
+  background-color: rgba(50, 150, 250, 0.3);
+  z-index: 2;
+  color: whitesmoke;
+  font-size: 1.5rem;
 }
 
 .header-links {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  color: whitesmoke;
+}
+.header-links a {
+  text-decoration: none;
+}
+.header-links a:hover {
+  color: black;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(0, 47, 255) /*rgb(54, 78, 150)*/;
+}
+.header-links a:visited {
+  color: whitesmoke;
 }
 
 .header-links li {
   margin: 0 10px;
 }
 
-.app {
+.home {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home h3 {
+  margin-top: 2rem;
+  z-index: 2;
+  color: rgba(100, 120, 180);
+  font-size: 1.5rem;
+}
+.home-img-div {
+  margin-top: -6rem;
+  padding: 0;
+  object-fit: cover;
+  z-index: 1;
+  overflow: hidden;
+}
+.home-img-div img {
+  opacity: 0.9;
+}
+.home p {
+  margin-top: -8rem;
+  font-style: inherit;
+  z-index: 2;
+  color: rgba(100, 120, 180);
+  font-size: 1.2rem;
 }
