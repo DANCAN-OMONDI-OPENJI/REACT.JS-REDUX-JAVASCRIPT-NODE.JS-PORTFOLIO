@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-export default function Header() {
+export default function Header(props) {
   return (
     <div className="header">
       <p>DANCAN OPENJI</p>
@@ -30,6 +30,7 @@ export default function Header() {
           borderColor: "whitesmoke",
           color: "whitesmoke",
         }}
+        onClick={props.toggle}
       >
         Toggle Color Theme
       </button>
