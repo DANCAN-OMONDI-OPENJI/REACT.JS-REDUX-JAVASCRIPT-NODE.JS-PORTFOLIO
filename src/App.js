@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 //import Counter from "./counter";
@@ -11,9 +11,15 @@ import Contact from "./Contact";
 import "./index.css";
 
 function App() {
+  const [toggleColorTheme, setToggleColor] = useState(false);
+  function toggleColor() {
+    setToggleColor((prevProp) => !prevProp);
+  }
+  console.log(toggleColorTheme);
+  const color = toggleColorTheme ? "rgba(100, 120, 180)" : "black";
   return (
-    <div className="app">
-      <Header />
+    <div className="app" style={{ backgroundColor: color }}>
+      <Header toggle={toggleColor} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
