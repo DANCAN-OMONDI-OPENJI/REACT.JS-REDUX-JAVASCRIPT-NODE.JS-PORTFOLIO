@@ -17,8 +17,9 @@ function App() {
   }
   console.log(toggleColorTheme);
   const color = toggleColorTheme ? "rgba(100, 120, 180)" : "black";
+  const myColor = toggleColorTheme ? "black" : "whiteSmoke";
   return (
-    <div className="app" style={{ backgroundColor: color }}>
+    <div className="app" style={{ backgroundColor: color, color: myColor }}>
       <Header toggle={toggleColor} />
       <Routes>
         <Route path="/" element={<Home />} />
