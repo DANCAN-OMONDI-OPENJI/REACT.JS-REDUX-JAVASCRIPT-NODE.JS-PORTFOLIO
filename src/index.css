@@ -60,11 +60,18 @@ code {
 .header-links li {
   margin: 0 10px;
 }
+.header-links .li-btn {
+  display: none;
+}
 .header button {
   font-weight: 600;
 }
 .header button:hover {
   cursor: pointer;
+}
+.header-last-div {
+  display: block;
+  width: 10vw;
 }
 
 /* home page*/
@@ -75,6 +82,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*background-color: blanchedalmond;*/
 }
 .home h3 {
   margin-top: 2rem;
@@ -132,7 +140,7 @@ code {
   text-align: center;
 }
 
-@media screen and (max-width: 780px) {
+@media only screen and (max-width: 780px) {
   .header {
     align-items: center;
     padding: 0.5rem;
@@ -145,9 +153,21 @@ code {
     justify-content: space-between;
     color: whitesmoke;
   }
+  .header-links .li-btn {
+    display: block;
+  }
   .header button {
     font-size: 2px;
   }
+  .header button {
+    display: none;
+    width: 20vw;
+  }
+  .header-last-div {
+    display: block;
+    width: 10vw !important;
+  }
+
   .home h3 {
     width: 65vw;
   }

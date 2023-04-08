@@ -12,15 +12,24 @@ import "./index.css";
 
 function App() {
   const [toggleColorTheme, setToggleColor] = useState(false);
+  const [toggleLinks, setToggleLinks] = useState(false);
   function toggleColor() {
     setToggleColor((prevProp) => !prevProp);
+  }
+  function toggleLinksDisplay() {
+    setToggleLinks((prevProp) => !prevProp);
   }
   console.log(toggleColorTheme);
   const color = toggleColorTheme ? "rgba(100, 120, 180)" : "black";
   const myColor = toggleColorTheme ? "black" : "whiteSmoke";
+
   return (
     <div className="app" style={{ backgroundColor: color, color: myColor }}>
-      <Header toggle={toggleColor} />
+      <Header
+        toggle={toggleColor}
+        toggleMyLinks={toggleLinksDisplay}
+        toggleLinksState={toggleLinks}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
