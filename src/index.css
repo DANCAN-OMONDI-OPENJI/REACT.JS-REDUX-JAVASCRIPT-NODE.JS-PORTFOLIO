@@ -1,3 +1,10 @@
+:root {
+  --my-white: #f0f0f0;
+  --my-red: #be3144;
+  --my-blue: #45567d;
+  --my-gray: #303841;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -82,6 +89,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*height: 100dvh;*/
   /*background-color: blanchedalmond;*/
 }
 .home h3 {
@@ -136,8 +144,69 @@ code {
   object-fit: contain;
   opacity: 0.8;
 }
-.about p:last-of-type {
+.about button:last-of-type {
   text-align: center;
+}
+
+.about button:last-of-type:hover {
+  cursor: pointer;
+}
+
+.projects {
+  /*height: 100dvh;*/
+  padding: 2rem;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-tile a:visited {
+  color: whitesmoke;
+}
+
+.project-tile a:hover {
+  opacity: 50%;
+  transform: scale(1);
+}
+
+.project-tile img {
+  object-fit: cover;
+}
+
+.project-tile p {
+  text-align: center;
+}
+
+.show-all {
+  margin: 2rem auto;
+}
+
+.show-all a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: var(--my-white);
+  background-color: var(--my-gray);
+}
+
+.show-all p {
+  background-color: var(--my-gray);
+  width: 150px;
+  margin: 0 auto;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 780px) {

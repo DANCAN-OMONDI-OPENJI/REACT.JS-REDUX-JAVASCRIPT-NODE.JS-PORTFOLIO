@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.about-skills {
+  margin: 0 auto;
+}
+.about-skills-img img {
+  width: 20vw;
+}
+.about-skills-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+  justify-items: center;
+}
+
+@media screen and (max-width: 920px) {
+  .about-skills {
+    margin: 0 auto;
+  }
+  .about-skills-img img {
+    width: 20vw;
+  }
+  .about-skills-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1px;
+    margin: 0;
+    justify-items: center;
+  }
+}
