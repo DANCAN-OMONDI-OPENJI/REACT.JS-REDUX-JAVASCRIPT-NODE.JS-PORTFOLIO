@@ -2,8 +2,53 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div>
-      <p>Contact Page</p>
-    </div>
+    <section id="contact-info">
+      <div class="contact-info-header">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="contact-info-links">
+        <a
+          id="profile-link"
+          href="https://www.linkedin.com/in/dancan-openji-988456248/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="ri-linkedin-box-fill">Linkedin</i>
+        </a>
+        <a
+          id="profile-link"
+          href="https://github.com/DANCAN-OMONDI-OPENJI?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="ri-github-fill">GitHub</i>
+        </a>
+        <a
+          id="profile-link"
+          href="https://twitter.com/DANCAN_OPENJI"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="ri-twitter-fill">Twitter</i>
+        </a>
+        <a
+          id="profile-link"
+          href="mailto:palmargenesis33@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="ri-at-line">send a mail</i>
+        </a>
+        <a
+          id="profile-link"
+          href="tel:+254 701519354"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="ri-smartphone-fill">call me</i>
+        </a>
+      </div>
+    </section>
   );
 }

@@ -34,7 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Projects" element={<Projects />} />
-        <Route path="/Blog" element={<Blog />} />
+        <Route path="/Blog" element={<Blog colorTheme={toggleColorTheme} />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </div>

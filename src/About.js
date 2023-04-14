@@ -72,7 +72,7 @@ export default function About() {
             height="25"
           />
           <img
-            src="https://assets.stickpng.com/images/62a765c8bd73a4af5c5d4fbc.png"
+            src="https://w7.pngwing.com/pngs/152/247/png-transparent-jest-hd-logo-thumbnail.png"
             alt="jest-logo"
             width="50"
             height="25"
@@ -134,9 +134,38 @@ export default function About() {
         </div>
       </div>
       <div className="about-education">
-        <h3>Education</h3>
+        <h3 id="education">Education</h3>
+        <table aria-describedby="education">
+          <thead>
+            <tr>
+              <th>School</th>
+              <th>Years</th>
+              <th>Qualifications</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>University Of Nairobi (UON)</td>
+              <td>2018-2023</td>
+              <td>
+                Bachelor's degree in Electrical and Electronics Engineering
+              </td>
+            </tr>
+            <tr>
+              <td>freeCodeCamp.org</td>
+              <td>2021-2023</td>
+              <td>Web Development certificate</td>
+            </tr>
+            <tr>
+              <td>Scrimba.com</td>
+              <td>2022-2023</td>
+              <td>Advanced React.js certificate</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div className="img-div">
+        <h3>Family</h3>
         <p>I and my wife Faith</p>
         <img
           src="./IMG-20220701-WA0043.jpg"
