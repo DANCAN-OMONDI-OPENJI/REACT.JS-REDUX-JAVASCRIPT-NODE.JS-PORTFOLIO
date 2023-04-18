@@ -1,7 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
+import { toggleColor, toggleLinksDisplay } from "./redux/index";
 import { Link } from "react-router-dom";
 import "./index.css";
-export default function Header(props) {
+function Header(props) {
   return (
     <div className="header">
       <p>DANCAN OPENJI</p>
@@ -56,11 +58,14 @@ export default function Header(props) {
               borderColor: "whitesmoke",
               color: "whitesmoke",
             }}
-            onClick={props.toggle}
+            onClick={props.togglePageColor}
           >
             Toggle Color Theme
           </button>
-          <div className="header-li-last-div" onClick={props.toggleMyLinks}>
+          <div
+            className="header-li-last-div"
+            onClick={props.togglePageLinksDisplay}
+          >
             <div>
               <hr />
               <hr />
@@ -68,7 +73,7 @@ export default function Header(props) {
           </div>
         </ul>
       ) : (
-        <div className="header-last-div" onClick={props.toggleMyLinks}>
+        <div className="header-last-div" onClick={props.togglePageLinksDisplay}>
           <div>
             <hr />
             <hr />
@@ -85,10 +90,30 @@ export default function Header(props) {
           borderColor: "whitesmoke",
           color: "whitesmoke",
         }}
-        onClick={props.toggle}
+        onClick={props.togglePageColor}
       >
         Toggle Color Theme
       </button>
     </div>
   );
 }
+
+function mapStateToProps(state) {
+  return {
+    toggleColorTheme: state.toggleColorTheme,
+    toggleLinksState: state.toggleLinks,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    togglePageColor: () => {
+      dispatch(toggleColor());
+    },
+    togglePageLinksDisplay: () => {
+      dispatch(toggleLinksDisplay());
+    },
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

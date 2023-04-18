@@ -1,10 +1,11 @@
 import React from "react";
+import { connect } from "react-redux";
 
-export default function Blog({ colorTheme }) {
+function Blog({ toggleColorTheme }) {
   return (
     <section id="blog-section" className="blog-section">
       <div className="blog">
-        <h1 style={{ color: colorTheme ? "orange" : "orangered" }}>
+        <h1 style={{ color: toggleColorTheme ? "orange" : "orangered" }}>
           Mastering Web Development: A Journey Through Essential Skills and
           Tools
         </h1>
@@ -85,3 +86,11 @@ export default function Blog({ colorTheme }) {
     </section>
   );
 }
+
+function mapStateToProps(state) {
+  return {
+    toggleColorTheme: state.toggleColorTheme,
+  };
+}
+
+export default connect(mapStateToProps)(Blog);
