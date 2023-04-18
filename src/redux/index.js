@@ -1,62 +1,46 @@
 import { configureStore } from "@reduxjs/toolkit";
-//import { createStore, applyMiddleware } from "redux";
-//import thunk from "redux-thunk";
-export function increment() {
-  return function (dispatch, getState, api) {
-    let myData;
-    fetch(api)
-      .then((res) => res.json())
-      .then((data) => (myData = data))
-      .then(
-        setTimeout(() => {
-          dispatch({
-            type: "INCREMENT",
-            payload: myData,
-          });
-        }, 3000)
-      );
-  };
+
+const TOGGLECOLOR = "TOGGLECOLOR";
+const TOGGLELINKSDISPLAY = "TOGGLELINKSDISPLAY";
+
+export function toggleColor() {
+  return { type: TOGGLECOLOR };
 }
-export function decrement() {
-  return {
-    type: "DECREMENT",
-  };
+
+export function toggleLinksDisplay() {
+  return { type: TOGGLELINKSDISPLAY };
 }
+
 const myState = {
-  count: 3,
-  person: { yoh: "het" },
+  toggleColorTheme: false,
+  toggleLinks: false,
 };
-//let myNum = 1;
+
 function reducer(state = myState, action) {
   switch (action.type) {
-    case "INCREMENT":
+    case TOGGLECOLOR:
       return {
         ...state,
-        count: state.count + 1,
-        person: action.payload,
+        toggleColorTheme: !state.toggleColorTheme,
       };
-    case "DECREMENT":
+    case TOGGLELINKSDISPLAY:
       return {
         ...state,
-        count: state.count - 1,
+        toggleLinks: !state.toggleLinks,
       };
     default:
-      return state;
+      return {
+        ...state,
+      };
   }
 }
-let api = `https://swapi.dev/api/people/1/`;
+
 const store = configureStore({
   reducer: reducer,
-  middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware({
-      thunk: {
-        extraArgument: api,
-      },
-    });
-  },
-  //applyMiddleware(thunk.withExtraArgument(api))
 });
+
 store.subscribe(() => {
   console.log(store.getState());
 });
+
 export default store;

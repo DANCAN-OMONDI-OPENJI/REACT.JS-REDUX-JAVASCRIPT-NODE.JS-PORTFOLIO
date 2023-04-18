@@ -26,13 +26,14 @@ code {
   margin-bottom: 0;
   overflow: hidden;
   color: whitesmoke;
+  position: relative;
 }
 
 /*Header page*/
 
 .header {
   /*position: fixed;
-  width: 95vw;*/
+  width: 95svw;*/
   display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -45,29 +46,36 @@ code {
 }
 
 .header-links {
+  display: none;
+}
+
+.header-links-lg {
   display: flex;
   list-style: none;
   justify-content: space-between;
   color: whitesmoke;
   font-weight: bold;
 }
-.header-links a {
+.header-links-lg a {
   text-decoration: none;
+  color: whitesmoke;
 }
-.header-links a:hover {
-  color: black;
-  text-decoration-line: underline;
-  text-decoration-color: rgb(0, 47, 255) /*rgb(54, 78, 150)*/;
-}
-.header-links a:visited {
+
+.header-links-lg a:visited {
   color: whitesmoke;
   font-weight: bold;
 }
 
-.header-links li {
+.header-links-lg a:hover {
+  color: black;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(0, 47, 255) /*rgb(54, 78, 150)*/;
+}
+
+.header-links-lg li {
   margin: 0 10px;
 }
-.header-links .li-btn {
+.header-links-lg .li-btn {
   display: none;
 }
 .header button {
@@ -77,7 +85,7 @@ code {
   cursor: pointer;
 }
 .header-last-div {
-  display: block;
+  display: none;
   width: 10vw;
 }
 
@@ -133,15 +141,15 @@ code {
   font-weight: 500;
 }
 
-table {
+.about table {
   margin: 0 auto;
 }
 
-table td {
+.about table td {
   padding: 0 10px;
 }
 
-.img-div {
+.about .img-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,6 +169,8 @@ table td {
   cursor: pointer;
 }
 
+/*Project  page*/
+
 .projects {
   /*height: 100dvh;*/
   padding: 2rem;
@@ -177,6 +187,10 @@ table td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.project-tile a {
+  color: skyblue;
 }
 
 .project-tile a:visited {
@@ -218,6 +232,8 @@ table td {
   justify-content: center;
 }
 
+/*Blog page styles*/
+
 .blog-section {
   padding: 4rem;
 }
@@ -234,9 +250,11 @@ table td {
   color: skyblue;
 }
 
+/*Contact page styling*/
+
 #contact-info {
   width: 100%;
-  height: 100dvh;
+  /* height: 100svh;*/
   /*background-color: var(--my-gray);*/
   color: var(--my-white);
   text-align: center;
@@ -261,24 +279,63 @@ table td {
 #contact-info i {
   margin: 0 1rem 0 0.5rem;
   font-size: 20px;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
+}
+.contact-info-links i {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (min-width: 920px) and (max-width: 1340px) {
+  .project-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 920px) {
   .header {
     align-items: center;
     padding: 0.5rem;
     font-size: 1.3rem;
+    position: relative;
+  }
+  .header-links-lg {
+    display: none;
   }
   .header-links {
     display: flex;
     flex-direction: column;
     list-style: none;
+    align-items: center;
     justify-content: space-between;
     color: whitesmoke;
+    position: absolute;
+    top: 0%;
+    left: 75%;
+    background-color: black;
+    padding: 8px 8px 16px 8px;
+    z-index: 1000 !important;
   }
   .header-links .li-btn {
     display: block;
+    margin-bottom: 1rem;
+    z-index: 1000;
+  }
+  .header-links a {
+    text-decoration: none;
+  }
+  .header-links a:visited {
+    color: whitesmoke;
+  }
+  .header-links a:hover {
+    color: grey;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(0, 47, 255) /*rgb(54, 78, 150)*/;
   }
   .header button {
     font-size: 2px;
@@ -289,11 +346,37 @@ table td {
   }
   .header-last-div {
     display: block;
-    width: 10vw !important;
+    width: 10svw !important;
   }
 
+  .header-li-last-div {
+    width: 5svw;
+    margin-inline: auto;
+  }
+
+  .header-li-last-div hr {
+    margin: 0;
+    padding: 0;
+    row-gap: 0;
+  }
+
+  .header-li-last-div hr:hover {
+    cursor: pointer;
+  }
+
+  .header-li-last-div hr:first-of-type {
+    transform: rotate(45deg);
+  }
+
+  .header-li-last-div hr:last-of-type {
+    transform: rotate(135deg);
+  }
+  .home {
+    z-index: -1;
+  }
   .home h3 {
     width: 65vw;
+    z-index: 999;
   }
   .home-img-div {
     margin-top: -6rem;
@@ -304,5 +387,24 @@ table td {
   }
   .home p {
     margin-top: -6rem;
+  }
+  .project-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /*Contacts page styles*/
+
+  .contact-info-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .contact-info-links i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

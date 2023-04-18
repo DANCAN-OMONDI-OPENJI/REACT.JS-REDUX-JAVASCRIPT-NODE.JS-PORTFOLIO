@@ -10,7 +10,8 @@ export default function Home() {
           src="./IMG-20220701-WA0031.jpg"
           alt="Dancan Openji facing the camera"
           width="inherit"
-          height="inherit"
+          /*height="1350"*/
+          object-fit="cover"
         />
       </div>
       <p>a front-end web developer</p>

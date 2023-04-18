@@ -92,8 +92,8 @@ export default function Projects() {
             <img
               src=".\drum-machine-screenshot.png"
               alt="drum-machine-link"
-              width="400"
-              height="200"
+              width="400rem"
+              height="200rem"
             />
             <p>
               <span>&lt;</span>Drum Machine<span>&#47;&gt;</span>
@@ -109,8 +109,8 @@ export default function Projects() {
             <img
               src=".\clock-screenshot.png"
               alt="25-+-5-link"
-              width="400"
-              height="200"
+              width="400rem"
+              height="200rem"
             />
             <p>
               <span>&lt;</span>25 + 5 Clock<span>&#47;&gt;</span>

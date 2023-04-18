@@ -41,12 +41,12 @@
   margin: 0 auto;
 }
 .about-skills-img img {
-  width: 20vw;
+  width: 20vmax;
 }
 .about-skills-img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1vw;
+  grid-gap: 1vmin;
   justify-items: center;
 }
 
@@ -55,12 +55,11 @@
     margin: 0 auto;
   }
   .about-skills-img img {
-    width: 20vw;
+    min-width: 20vw;
   }
   .about-skills-img {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 1px;
+    grid-gap: 0;
     margin: 0;
     justify-items: center;
   }

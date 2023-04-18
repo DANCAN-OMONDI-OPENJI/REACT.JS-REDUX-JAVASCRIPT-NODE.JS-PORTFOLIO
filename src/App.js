@@ -29,6 +29,7 @@ function App() {
         toggle={toggleColor}
         toggleMyLinks={toggleLinksDisplay}
         toggleLinksState={toggleLinks}
+        toggleColorTheme={toggleColorTheme}
       />
       <Routes>
         <Route path="/" element={<Home />} />
