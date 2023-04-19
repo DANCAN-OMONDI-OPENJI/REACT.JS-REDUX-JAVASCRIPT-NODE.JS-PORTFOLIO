@@ -170,6 +170,8 @@ export default function About() {
         <img
           src="./IMG-20220701-WA0043.jpg"
           alt="Dancan Openji facing the camera"
+          width="375"
+          height="308"
         />
       </div>
 

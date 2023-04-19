@@ -9,8 +9,8 @@ export default function Home() {
         <img
           src="./IMG-20220701-WA0031.jpg"
           alt="Dancan Openji facing the camera"
-          width="inherit"
-          /*height="1350"*/
+          width="562"
+          height="1173"
           object-fit="cover"
         />
       </div>
