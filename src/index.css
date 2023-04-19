@@ -27,13 +27,17 @@ code {
   overflow: hidden;
   color: whitesmoke;
   position: relative;
+  padding-top: 10rem;
 }
 
 /*Header page*/
 
 .header {
-  /*position: fixed;
-  width: 95svw;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 94svw;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -235,7 +239,7 @@ code {
 /*Blog page styles*/
 
 .blog-section {
-  padding: 4rem;
+  padding: 2rem 4rem 4rem 4rem;
 }
 
 .blog h1 {
@@ -258,7 +262,7 @@ code {
   /*background-color: var(--my-gray);*/
   color: var(--my-white);
   text-align: center;
-  padding: 2rem 0 6rem 0;
+  padding: 0.5rem 0 6rem 0;
 }
 
 #contact-info h2 {
@@ -289,7 +293,7 @@ code {
   display: inline-flex;
 }
 
-@media only screen and (min-width: 920px) and (max-width: 1340px) {
+@media only screen and (min-width: 980px) and (max-width: 1340px) {
   .project-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -297,12 +301,15 @@ code {
   }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 980px) {
+  .app {
+    padding-top: 5rem;
+  }
   .header {
     align-items: center;
     padding: 0.5rem;
     font-size: 1.3rem;
-    position: relative;
+    /*position: relative;*/
   }
   .header-links-lg {
     display: none;
@@ -394,6 +401,10 @@ code {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  /*.blog-section {
+    margin-top: -2rem;
+  }*/
 
   /*Contacts page styles*/
 

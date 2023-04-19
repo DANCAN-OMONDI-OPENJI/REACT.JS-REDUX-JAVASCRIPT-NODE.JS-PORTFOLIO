@@ -5,10 +5,24 @@ import { Link } from "react-router-dom";
 import "./index.css";
 function Header(props) {
   return (
-    <div className="header">
+    <div
+      className="header"
+      style={{
+        /*backgroundColor: props.toggleColorTheme
+          ? "rgba(50, 150, 250, 0.3)"
+          : "rgb(0,0,0)"
+        color: props.toggleColorTheme ? "black" : "white",*/
+        borderBottom: props.toggleColorTheme
+          ? "2px solid rgba(50, 150, 250, 0.1)"
+          : "2px solid gray",
+      }}
+    >
       <p>DANCAN OPENJI</p>
 
-      <ul className="header-links-lg">
+      <ul
+        className="header-links-lg"
+        style={{ color: props.toggleColorTheme ? "black" : "gray" }}
+      >
         <li>
           <Link to="/">Home</Link>
         </li>
