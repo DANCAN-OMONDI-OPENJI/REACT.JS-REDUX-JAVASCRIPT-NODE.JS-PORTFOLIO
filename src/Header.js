@@ -47,6 +47,15 @@ function Header(props) {
             backgroundColor: props.toggleColorTheme ? "skyBlue" : "black",
           }}
         >
+          <div
+            className="header-li-first-div"
+            onClick={props.togglePageLinksDisplay}
+          >
+            <div>
+              <hr />
+              <hr />
+            </div>
+          </div>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -76,7 +85,7 @@ function Header(props) {
           >
             Toggle Color Theme
           </button>
-          <div
+          {/*<div
             className="header-li-last-div"
             onClick={props.togglePageLinksDisplay}
           >
@@ -84,7 +93,7 @@ function Header(props) {
               <hr />
               <hr />
             </div>
-          </div>
+          </div>*/}
         </ul>
       ) : (
         <div className="header-last-div" onClick={props.togglePageLinksDisplay}>
