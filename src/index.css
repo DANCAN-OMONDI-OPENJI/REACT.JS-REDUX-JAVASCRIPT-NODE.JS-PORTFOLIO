@@ -399,6 +399,11 @@ code {
   .home p {
     margin-top: -6rem;
   }
+  .projects {
+    /*height: 100dvh;*/
+    padding: 2rem;
+    margin-inline: auto;
+  }
   .project-links {
     display: grid;
     grid-template-columns: 1fr;
