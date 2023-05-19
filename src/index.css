@@ -401,13 +401,13 @@ code {
   }
   .projects {
     /*height: 100dvh;*/
-    padding: 2rem 0;
+    padding: 2;
     margin-inline: auto;
   }
   .project-links {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2rem 0;
     margin-inline: auto;
     padding-inline: auto;
   }
