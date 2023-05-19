@@ -401,7 +401,7 @@ code {
   }
   .projects {
     /*height: 100dvh;*/
-    padding: 2rem;
+    padding: 2rem 0;
     margin-inline: auto;
   }
   .project-links {
