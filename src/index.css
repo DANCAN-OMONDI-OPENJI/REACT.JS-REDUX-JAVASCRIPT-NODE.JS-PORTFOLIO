@@ -179,7 +179,7 @@ code {
   opacity: 0.8;
 }
 .button-div {
-  padding-inline: 2rem;
+  padding: 2rem;
 }
 .about button:last-of-type {
   text-align: center;
