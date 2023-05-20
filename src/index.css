@@ -136,6 +136,7 @@ code {
   /*color: whitesmoke;*/
   color: inherit;
   padding: 2rem 0;
+  margin: auto;
 }
 .about h3 {
   text-align: center;
@@ -149,17 +150,17 @@ code {
 
 .about-education {
   padding-inline: 0.5rem;
-  margin-inline: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.about table {
+/*.about table {
   width: 80vw;
   margin: 0 auto;
-}
+}*/
 
 .about table td {
   padding: 0 0.5rem;
@@ -306,6 +307,15 @@ code {
   display: inline-flex;
 }
 @media only screen and (min-width: 0px) and (max-width: 650px) {
+  .about table {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .about table td {
+    padding: 0 0.3rem;
+  }
+
   .projects {
     padding: 2rem 0.5rem;
     margin-inline: auto;
