@@ -294,6 +294,10 @@ code {
   display: inline-flex;
 }
 @media only screen and(max-width: 450px) {
+  .project-tile img {
+    width: 75vw;
+    object-fit: cover;
+  }
 }
 
 @media only screen and (max-width: 980px) {
