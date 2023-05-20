@@ -293,16 +293,16 @@ code {
   justify-content: center;
   display: inline-flex;
 }
-@media only screen and(max-width: 650px) {
+@media only screen and (min-width: 0px) and (max-width: 650px) {
   .project-tile {
-    width: 40vw;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .project-tile img {
-    width: 1px;
+    width: 2rem;
     object-fit: cover;
   }
 }
