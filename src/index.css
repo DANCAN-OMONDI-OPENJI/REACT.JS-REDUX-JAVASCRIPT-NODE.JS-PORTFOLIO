@@ -293,9 +293,8 @@ code {
   justify-content: center;
   display: inline-flex;
 }
-@media only screen and (min-width: 0px) and (max-width: 650px) {
+/*@media only screen and (min-width: 0px) and (max-width: 650px) {
   .project-tile {
-    /*width: 60vw;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,7 +305,7 @@ code {
     object-fit: cover;
   }
 }
-
+*/
 @media only screen and (max-width: 980px) {
   .app {
     padding-top: 5rem;
