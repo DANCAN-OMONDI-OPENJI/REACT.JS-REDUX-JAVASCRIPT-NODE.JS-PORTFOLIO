@@ -293,9 +293,9 @@ code {
   justify-content: center;
   display: inline-flex;
 }
-@media only screen and(max-width: 450px) {
+@media only screen and(max-width: 650px) {
   .project-tile img {
-    width: 75vw;
+    width: 2rem;
     object-fit: cover;
   }
 }
