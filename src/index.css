@@ -295,14 +295,14 @@ code {
 }
 @media only screen and (min-width: 0px) and (max-width: 650px) {
   .project-tile {
-    width: 60vw;
+    /*width: 60vw;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .project-tile img {
-    width: 2rem;
+    width: 60vw;
     object-fit: cover;
   }
 }
@@ -412,7 +412,7 @@ code {
   }
   .projects {
     /*height: 100dvh;*/
-    padding: 2rem 0;
+    padding: 2rem;
     margin-inline: auto;
   }
   .project-links {
