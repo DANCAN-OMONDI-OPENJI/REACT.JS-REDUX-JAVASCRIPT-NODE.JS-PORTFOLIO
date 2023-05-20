@@ -308,7 +308,7 @@ code {
 }
 @media only screen and (min-width: 0px) and (max-width: 650px) {
   .about table {
-    width: 80vw;
+    width: 74vw;
     margin: 0 auto;
   }
 
