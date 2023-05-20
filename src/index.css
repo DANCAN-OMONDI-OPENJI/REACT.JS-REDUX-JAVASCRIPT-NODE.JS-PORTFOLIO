@@ -148,6 +148,10 @@ code {
 .about-education {
   padding-inline: 0.5rem;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about table {
