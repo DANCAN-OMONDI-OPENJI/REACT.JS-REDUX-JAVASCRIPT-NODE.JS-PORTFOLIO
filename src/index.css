@@ -160,8 +160,8 @@ code {
 /*.about table {
   width: 80vw;
   margin: 0 auto;
-}*/
-
+}
+*/
 .about table td {
   padding: 0 0.5rem;
 }
@@ -313,7 +313,7 @@ code {
   }
 
   .about table td {
-    padding: 0 0.3rem;
+    padding: 0;
   }
 
   .projects {
