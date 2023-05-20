@@ -293,7 +293,11 @@ code {
   justify-content: center;
   display: inline-flex;
 }
-/*@media only screen and (min-width: 0px) and (max-width: 650px) {
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+  .projects {
+    padding: 2rem 0.5rem;
+    margin-inline: auto;
+  }
   .project-tile {
     display: flex;
     flex-direction: column;
@@ -301,11 +305,11 @@ code {
     justify-content: center;
   }
   .project-tile img {
-    width: 60vw;
+    width: 80vw;
     object-fit: cover;
   }
 }
-*/
+
 @media only screen and (max-width: 980px) {
   .app {
     padding-top: 5rem;
