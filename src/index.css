@@ -447,7 +447,7 @@ code {
 
   .about table {
     width: 80vw;
-    padding: 2rem;
+    /*padding: 2rem;*/
     margin-inline: auto;
   }
   /*.about table td {
