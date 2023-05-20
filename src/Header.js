@@ -8,10 +8,6 @@ function Header(props) {
     <div
       className="header"
       style={{
-        /*backgroundColor: props.toggleColorTheme
-          ? "rgba(50, 150, 250, 0.3)"
-          : "rgb(0,0,0)"
-        color: props.toggleColorTheme ? "black" : "white",*/
         borderBottom: props.toggleColorTheme
           ? "2px solid rgba(50, 150, 250, 0.1)"
           : "2px solid gray",
@@ -85,15 +81,6 @@ function Header(props) {
           >
             Toggle Color Theme
           </button>
-          {/*<div
-            className="header-li-last-div"
-            onClick={props.togglePageLinksDisplay}
-          >
-            <div>
-              <hr />
-              <hr />
-            </div>
-          </div>*/}
         </ul>
       ) : (
         <div className="header-last-div" onClick={props.togglePageLinksDisplay}>
