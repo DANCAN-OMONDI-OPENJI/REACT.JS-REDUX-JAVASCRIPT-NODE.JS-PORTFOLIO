@@ -174,8 +174,9 @@ export default function About() {
           height="308"
         />
       </div>
-
+      <div className="button-div">
       <button onClick={() => navigate("/")}>Home page</button>
+      </div>
     </section>
   );
 }

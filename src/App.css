@@ -46,7 +46,7 @@
 .about-skills-img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1vmin;
+  /*grid-gap: 1vmin;*/
   justify-items: center;
 }
 
@@ -56,11 +56,13 @@
   }
   .about-skills-img img {
     min-width: 20vw;
+    margin: -2rem 0;
   }
   .about-skills-img {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0;
-    margin: 0;
+    margin: -2rem 0;
     justify-items: center;
+    padding: 0;
   }
 }
