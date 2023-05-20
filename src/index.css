@@ -146,10 +146,12 @@ code {
 }
 
 .about-education {
+  padding-inline: 0.5rem;
   margin-inline: auto;
 }
 
 .about table {
+  width: 80vw;
   margin: 0 auto;
 }
 
