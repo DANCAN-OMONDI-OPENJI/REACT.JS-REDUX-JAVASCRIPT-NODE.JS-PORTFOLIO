@@ -313,6 +313,7 @@ code {
   .home h3 {
     width: 65vw;
     margin-bottom: -4rem;
+    text-align: center;
   }
   .home-img-div {
     margin-top: 0rem;
@@ -443,7 +444,7 @@ code {
   .home h3 {
     width: 65vw;
     margin-bottom: -5rem;
-    margin-inline: auto;
+    text-align: center;
   }
   .home-img-div {
     margin-top: 0rem;
