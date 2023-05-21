@@ -10,7 +10,7 @@ export default function Contact() {
       <div class="contact-info-links">
         <a
           id="profile-link"
-          href="https://www.linkedin.com/in/dancan-openji-988456248/"
+          href="https://www.linkedin.com/in/dancan-openji-71a6a1252/"
           target="_blank"
           rel="noreferrer"
         >
@@ -26,7 +26,7 @@ export default function Contact() {
         </a>
         <a
           id="profile-link"
-          href="https://twitter.com/DANCAN_OPENJI"
+          href="https://twitter.com/DancanOpenjiDev"
           target="_blank"
           rel="noreferrer"
         >
@@ -34,7 +34,7 @@ export default function Contact() {
         </a>
         <a
           id="profile-link"
-          href="mailto:palmargenesis33@gmail.com"
+          href="mailto:dancanopenji9@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
